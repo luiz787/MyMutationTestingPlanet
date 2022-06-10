@@ -32,7 +32,8 @@ public class MutationTest {
 
     @Test
     public void increment() throws Exception {
-        this.mockMvc.perform(get("/increment/5")).andDo(print()).andExpect(status().isOk());
+        this.mockMvc.perform(get("/increment/5")).andDo(print()).andExpect(status().isOk())
+                .andExpect(content().string("6"));
     }
 
 }

@@ -1,0 +1,1 @@
+mvn -Dmutation-analysis=true
